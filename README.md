@@ -8,13 +8,21 @@ The goal is to predict whether a given tweet is about a real disaster (1) or not
 Each sample in the train and test sets contains the following information:
 
 text: The text of the tweet
+
 keyword: A keyword from the tweet (may be blank)
+
 location: The location the tweet was sent from (may also be blank)
+
+
 Columns in train.csv
 id: A unique identifier for each tweet
+
 text: The text of the tweet
+
 location: The location the tweet was sent from (may be blank)
+
 keyword: A particular keyword from the tweet (may be blank)
+
 target: Indicates whether the tweet is about a real disaster (1) or not (0)
 
 ## Data Preprocessing and Model Training
