@@ -31,18 +31,28 @@ We imported the necessary libraries including seaborn for visualization, matplot
 
 ### Data Visualization
 Target Distribution: We visualized the distribution of the target variable to understand the balance between disaster and non-disaster tweets.
+
+
 Tweet Length Distribution: We visualized the distribution of tweet lengths in both the training and test sets to understand the text length variability.
 
 ### Model Selection and Preparation
 DistilBERT Model: Loaded a pre-trained DistilBERT model and its tokenizer from KerasNLP for text preprocessing and classification.
+
+
 Preprocessor: Configured the preprocessor with a sequence length suitable for tweets.
+
+
 Classifier: Set up the classifier with the DistilBERT backbone and defined it to classify tweets into two categories (disaster or non-disaster).
 ### Model Compilation and Training
 Compile the Model: Compiled the model with the Adam optimizer, Sparse Categorical Crossentropy loss, and accuracy as a metric.
+
+
 Fit the Model: Trained the model on the training data and validated it using the validation set over two epochs.
 
 ### Model Evaluation
 After training the DistilBERT model, we evaluated its performance on both the training and validation datasets. The results were as follows:
 
 Final Training Accuracy: 85.04%
+
+
 Final Validation Accuracy: 84.24%
